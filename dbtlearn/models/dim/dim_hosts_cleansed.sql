@@ -6,7 +6,7 @@ FROM
 )
 
 SELECT 
-id,
+id as host_id,
 NVL(host_name, 'Anonymous') as host_name,
 is_superhost,
 created_at,
