@@ -3,7 +3,7 @@ SELECT
     *
 FROM
     --AIRBNB.RAW.RAW_HOSTS
-    {{ source('AIRBNB', 'hosts') }}
+    {{ source('airbnb', 'hosts') }}
 )
 SELECT
     id,

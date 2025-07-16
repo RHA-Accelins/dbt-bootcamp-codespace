@@ -4,7 +4,7 @@ SELECT
     * 
 FROM 
     --AIRBNB.RAW.RAW_REVIEWS
-    {{ source('AIRBNB', 'reviews') }}
+    {{ source('airbnb', 'reviews') }}
 )
 
 SELECT
