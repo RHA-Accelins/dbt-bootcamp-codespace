@@ -5,7 +5,7 @@ models:
     columns:
 
       - name: listing_id
-        test:
+        tests:
           - unique
           - not_null
   
