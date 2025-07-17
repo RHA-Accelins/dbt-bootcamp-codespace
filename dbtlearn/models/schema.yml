@@ -23,3 +23,20 @@ models:
                       'Private room',
                       'Shared room',
                       'Hotel room']
+  - name: dim_hosts_cleansed
+    description: list of hosts by name with super hosts denoted
+    columns:
+    
+      - name: host_id
+        description: the unique id of the host
+        tests:
+          - not_null
+          - unique
+
+      - name: host_name
+        description: the name of the host with null values replaced with 'anonymous'
+
+      - name: is_superhost
+        description: demarks if the host is a superhost (true/false)
+
+    
